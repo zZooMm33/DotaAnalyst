@@ -49,18 +49,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Database\Connection.cs" />
-    <Compile Include="Database\Models\Hero.cs" />
-    <Compile Include="Database\Models\HeroRelations.cs" />
-    <Compile Include="Database\Models\Item.cs" />
+    <Compile Include="Storage\Connection.cs" />
     <Compile Include="Utils\AppConfig.cs" />
+    <Compile Include="Storage\Hero\Hero.cs" />
+    <Compile Include="Storage\HeroRelations\HeroRelations.cs" />
+    <Compile Include="Storage\Item\Item.cs" />
+    <Compile Include="Storage\Hero\HeroFactory.cs" />
+    <Compile Include="Storage\Hero\DAO\IHeroDAO.cs" />
+    <Compile Include="Storage\Hero\DAO\HeroXML.cs" />
+    <Compile Include="Storage\Hero\DAO\HeroSQL.cs" />
+    <Compile Include="Storage\Hero\HeroInstance.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Database\" />
+    <Folder Include="Storage\" />
     <Folder Include="Utils\" />
-    <Folder Include="Database\Models\" />
     <Folder Include="Resources\" />
     <Folder Include="Resources\XmlStorage\" />
+    <Folder Include="Storage\Hero\" />
+    <Folder Include="Storage\HeroRelations\" />
+    <Folder Include="Storage\Item\" />
+    <Folder Include="Storage\Hero\DAO\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\app.config" />
