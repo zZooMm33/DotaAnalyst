@@ -1,10 +1,12 @@
 ﻿using System;
-namespace DotaAnalyst.Models
+using System.Collections.Generic;
+
+namespace ClassLibraryDota2.Models
 {
-    public class User
+    public class Hero
     {
-        public User()
-        {
-        }
+        private int Id { get; set; }
+
+        private int Name { get; set; }
     }
 }
