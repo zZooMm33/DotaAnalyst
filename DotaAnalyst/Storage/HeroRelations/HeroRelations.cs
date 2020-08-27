@@ -5,14 +5,14 @@ namespace DotaAnalyst.Models
 {
     public class HeroRelations
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        private int IdHero { get; set; }
+        public int IdHero { get; set; }
 
-        private List<Item> MostUsedItems { get; set; }
+        public List<Item> MostUsedItems { get; set; }
 
-        private List<Hero> BestVersus { get; set; }
+        public List<Hero> BestVersus { get; set; }
 
-        private List<Hero> WorstVersus { get; set; }
+        public List<Hero> WorstVersus { get; set; }
     }
 }

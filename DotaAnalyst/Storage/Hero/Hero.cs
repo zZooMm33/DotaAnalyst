@@ -5,8 +5,8 @@ namespace DotaAnalyst.Models
 {
     public class Hero
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        private int Name { get; set; }
+        public string Name { get; set; }
     }
 }

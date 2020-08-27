@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analytics", "DotaAnalyst\An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainWindow", "WindowsFormsDotaAnalyst\MainWindow.csproj", "{0430F6EA-FEBC-4EA6-8420-46A6E31975DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyticsTests", "TestingAnalytics\AnalyticsTests.csproj", "{D220FA4F-DFE1-4A30-989C-81C6EFCD0125}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0430F6EA-FEBC-4EA6-8420-46A6E31975DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0430F6EA-FEBC-4EA6-8420-46A6E31975DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0430F6EA-FEBC-4EA6-8420-46A6E31975DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D220FA4F-DFE1-4A30-989C-81C6EFCD0125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D220FA4F-DFE1-4A30-989C-81C6EFCD0125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D220FA4F-DFE1-4A30-989C-81C6EFCD0125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D220FA4F-DFE1-4A30-989C-81C6EFCD0125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

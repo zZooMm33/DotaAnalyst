@@ -8,24 +8,9 @@ namespace DotaAnalyst.Database
     {
         public static IHeroDAO FactoryMethod()
         {
-
-            switch (ConfigurationManager.AppSettings[AppConfig.DATA_BASE_TYPE])
-            {
-                case "xml":
-                    {
-                        return new HeroXML();
-                    }
-                    break;
-                case "sql":
-                    {
-                        return new HeroSQL();
-                    }
-                    break;
-                default:
-                    break;
-            }
-
-            return null;
+            if (ConfigurationManager.AppSettings[AppConfigConst.DATA_BASE_TYPE].Equals("xml")) return new HeroXML();
+            else if (ConfigurationManager.AppSettings[AppConfigConst.DATA_BASE_TYPE].Equals("sql")) return new HeroSQL();
+            else return null;
         }
     }
 }

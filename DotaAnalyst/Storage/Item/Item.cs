@@ -3,10 +3,10 @@ namespace DotaAnalyst.Models
 {
     public class Item
     {
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        private string Name { get; set; }
+        public string Name { get; set; }
 
-        private int Price { get; set; }
+        public int Price { get; set; }
     }
 }
