@@ -15,7 +15,9 @@ namespace DotaAnalyst.Database
         {
             List<Hero> heroes = new List<Hero>();
             XmlDocument doc = new XmlDocument();
-            doc.Load(ConfigurationManager.AppSettings[AppConfigConst.RESOURCES_PATH]);
+            doc.Load(Path.GetTempPath()
+                + ConfigurationManager.AppSettings[AppConfigConst.RESOURCES_PATH_NAME]
+                + CreateResources.HEROES_FILE_NAME);
 
             foreach (XmlNode node in doc.DocumentElement)
             {
